@@ -40,7 +40,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     .then(filteredpath => {
       return res.status(200).sendFile(filteredpath);
    }).catch(() => {
-      return res.status(422).send("not valid URL");
+      return res.status(422).send("not processable Entity");
     });
     // res.sendFile(filteredpath);
   } );
